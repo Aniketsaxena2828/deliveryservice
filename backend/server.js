@@ -23,6 +23,10 @@ app.use(
   require("./routes/productRoutes")
 );
 
+app.get("/", (req, res) => {
+  res.send("Backend Running");
+});
+
 app.use(
   "/api/orders",
   require("./routes/orderRoutes")

@@ -40,7 +40,7 @@ function Login() {
 
         alert("Login Successful");
 
-        navigate("/");
+        window.location.href = "/";
     } catch (error) {
       console.log(error);
 
